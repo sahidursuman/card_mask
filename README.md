@@ -1,6 +1,6 @@
 # CardMask
 
-CardMask is a simple `ViewHelper` wrapper that generates a mask for card numbers.
+CardMask is a simple `ViewHelper` wrapper that generates a mask for card numbers, perfect for the [Stripe API](https://stripe.com/docs/api).
 
 ## Installation
 
@@ -20,7 +20,10 @@ gfgfgfgOr install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Something like this:
+``` ruby
+<%= card_mask("Visa", "9876") %>$%%%
+```
 
 ## Development
 
