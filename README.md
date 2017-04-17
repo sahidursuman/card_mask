@@ -1,5 +1,7 @@
 # CardMask
 
+[![Gem Version](https://badge.fury.io/rb/card_mask.svg)](https://badge.fury.io/rb/card_mask)
+
 CardMask is a simple `ViewHelper` wrapper that generates a mask for card numbers, perfect for the [Stripe API](https://stripe.com/docs/api).
 
 Supported card types:
