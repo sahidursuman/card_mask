@@ -21,8 +21,12 @@ gfgfgfgOr install it yourself as:
 ## Usage
 
 Something like this:
-``` ruby
-<%= card_mask("Visa", "9876") %>$%%%
+``` erb
+<%= card_mask("Visa", "9876") %>
+```
+will generate something like this:
+``` html
+<span>**** **** **** 9876</span>
 ```
 
 ## Development
