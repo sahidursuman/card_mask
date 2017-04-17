@@ -2,6 +2,14 @@
 
 CardMask is a simple `ViewHelper` wrapper that generates a mask for card numbers, perfect for the [Stripe API](https://stripe.com/docs/api).
 
+Supported card types:
+- Visa
+- American Express
+- MasterCard
+- Discover
+- JCB
+- Diners Club
+
 ## Installation
 
 Add this line to your application's Gemfile:
