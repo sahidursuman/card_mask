@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["slehmann36@gmail.com"]
 
   spec.summary       = %q{Ruby gem for formatting those **** stings based on the type of card.}
-  # spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.description   = %q{CardMask is a simple ViewHelper wrapper that generates a mask for card numbers, perfect for the Stripe API.}
   spec.homepage      = "https://github.com/slehmann36/card_mask"
   spec.license       = "MIT"
 
