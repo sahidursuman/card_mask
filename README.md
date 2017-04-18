@@ -1,6 +1,6 @@
 # CardMask
 
-CardMask is a simple `ViewHelper` wrapper that generates a mask for card numbers, perfect for the [Stripe API](https://stripe.com/docs/api).
+CardMask is a simple `ViewHelper` wrapper that generates a mask for card numbers, perfect for use with the [Stripe API](https://stripe.com/docs/api).
 
 Supported card types:
 - Visa
@@ -28,6 +28,8 @@ Or install it yourself as:
 
 ## Usage
 
+### TL;DR
+
 Something like this:
 ``` erb
 <%= card_mask("Visa", "9876", id: "primary-card", class: "card-number") %>
@@ -37,7 +39,11 @@ will generate something like this:
 <span id="primary-card" class="card-number">**** **** **** 9876</span>
 ```
 
-Card type values include: `Visa`, `American Express`, `MasterCard`, `Discover`, `JCB` and `Diners Club`.
+### Syntax
+``` erb
+<%= card_mask(card_type, last4, options = {}) %>
+```
+`card_type` values include: `Visa`, `American Express`, `MasterCard`, `Discover`, `JCB` and `Diners Club`.
 
 ## Development
 
