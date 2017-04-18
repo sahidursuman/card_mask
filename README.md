@@ -1,5 +1,7 @@
 # CardMask
 
+[![Gem Version](https://badge.fury.io/rb/card_mask.svg)](https://badge.fury.io/rb/card_mask)
+
 CardMask is a simple `ViewHelper` wrapper that generates a mask for card numbers, perfect for use with the [Stripe API](https://stripe.com/docs/api).
 
 Supported card types:
@@ -59,4 +61,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/slehma
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
