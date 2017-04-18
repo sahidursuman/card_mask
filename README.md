@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/card_mask.svg)](https://badge.fury.io/rb/card_mask)
 
-CardMask is a simple `ViewHelper` wrapper that generates a mask for card numbers, perfect for the [Stripe API](https://stripe.com/docs/api).
+CardMask is a simple `ViewHelper` wrapper that generates a mask for card numbers, perfect for use with the [Stripe API](https://stripe.com/docs/api).
 
 Supported card types:
 - Visa
@@ -24,20 +24,28 @@ And then execute:
 
     $ bundle
 
-gfgfgfgOr install it yourself as:
+Or install it yourself as:
 
     $ gem install card_mask
 
 ## Usage
 
+### TL;DR
+
 Something like this:
 ``` erb
-<%= card_mask("Visa", "9876") %>
+<%= card_mask("Visa", "9876", id: "primary-card", class: "card-number") %>
 ```
 will generate something like this:
 ``` html
-<span>**** **** **** 9876</span>
+<span id="primary-card" class="card-number">**** **** **** 9876</span>
 ```
+
+### Syntax
+``` erb
+<%= card_mask(card_type, last4, options = {}) %>
+```
+`card_type` values include: `Visa`, `American Express`, `MasterCard`, `Discover`, `JCB` and `Diners Club`.
 
 ## Development
 
@@ -53,4 +61,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/slehma
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
