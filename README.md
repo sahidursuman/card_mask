@@ -22,7 +22,7 @@ And then execute:
 
     $ bundle
 
-gfgfgfgOr install it yourself as:
+Or install it yourself as:
 
     $ gem install card_mask
 
