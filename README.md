@@ -30,12 +30,14 @@ gfgfgfgOr install it yourself as:
 
 Something like this:
 ``` erb
-<%= card_mask("Visa", "9876") %>
+<%= card_mask("Visa", "9876", id: "primary-card", class: "card-number") %>
 ```
 will generate something like this:
 ``` html
-<span>**** **** **** 9876</span>
+<span id="primary-card" class="card-number">**** **** **** 9876</span>
 ```
+
+Card type values include: `Visa`, `American Express`, `MasterCard`, `Discover`, `JCB` and `Diners Club`.
 
 ## Development
 
