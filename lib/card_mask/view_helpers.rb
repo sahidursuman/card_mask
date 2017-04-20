@@ -1,9 +1,9 @@
 module CardMask
   module ViewHelpers
-    def card_mask(card_type, last4, options = nil)
+    def card_mask(card_type, last4, html_options = {})
 
-      # options ||= {}
-      options = options.stringify_keys
+      # html_options ||= {}
+      # html_options = html_options.stringify_keys
 
       output_string = case card_type
       when "Visa", "MasterCard", "Discover", "JCB"
@@ -17,7 +17,7 @@ module CardMask
       end
 
       # Generate final tag
-      content_tag(:span, output_string, options)
+      content_tag(:span, output_string, html_options)
     end
   end
 end
