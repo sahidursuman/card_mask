@@ -43,7 +43,7 @@ will generate something like this:
 
 ### Syntax
 ``` erb
-<%= card_mask(card_type, last4, options = {}) %>
+<%= card_mask(card_type, last4, html_options = {}) %>
 ```
 `card_type` values include: `Visa`, `American Express`, `MasterCard`, `Discover`, `JCB` and `Diners Club`.
 
